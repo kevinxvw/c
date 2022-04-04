@@ -5,12 +5,17 @@
 %*s would exclude one word.
 */
 
-#include<stdio.h>
+#include <iostream>
+using namespace std;
 int main()
 {
  int d,m,y;
-  printf("enter date month year ");
-  scanf("%d%*c%d%*c%d",&d,&m,&y);
+  cout << "input day :  ";
+  cin >> d;
+  cout << "input month :  ";
+  cin >> m;
+  cout << "input years :  ";
+  cin >> y;
   printf("date: %d\nmonth: %d\nyear: %d",d,m,y);
 return 0;
 }
